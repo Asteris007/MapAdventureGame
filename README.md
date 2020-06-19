@@ -1,4 +1,7 @@
 # MapAdventureGame
+Run the program from "Course_Project_06.sln"
+
+Things must do:
 The Classes Enemy and Characted must be Abstract
 Virtual function for Character :Level Up, Attack, Defence. For the Enemy: Attack and Defence
 When the Character goes on the enemy to make battle.
