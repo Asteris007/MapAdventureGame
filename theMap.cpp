@@ -20,17 +20,19 @@ void theMap::moveChar() {
 
         for (int i = 0; i < 32; i++) {
             for (int j = 0;j < 84;j++) {
+                if (j == ch->getX() && i == ch->getY()) {
+                    cout << '*';
+                }
                 
-                    cout << map[i] << endl;
-                    if (j == ch->getX() && i == ch->getY()){
-                       map[i][j] = '@';
-                            cout << map[j] << endl;
-                        
+                else {
+                    cout << map[i][j];
                 }
             }
+            cout << endl;
         }
-        cout << "\n\n\nPress Escape to exit the game.\n\n\n";
-        system("pause");
+
+       
+      
 
 
         if (GetAsyncKeyState(VK_DOWN)) {
@@ -40,9 +42,7 @@ void theMap::moveChar() {
                 map[y][x] = ' ';
                 y++;
                 map[y][x] = '@';
-                if (map[5][18]) {
-                    cout << "Wewkom to the FOREST";
-                }
+                
             }
         }
         if (GetAsyncKeyState(VK_UP)) {
@@ -59,10 +59,7 @@ void theMap::moveChar() {
                 map[y][x] = ' ';
                 x--;
                 map[y][x] = '@';
-                if (map[y][x] = '@' == map[5][25]) {
-                    system("pause");
-                    cout << "Wellcome to the FOREST";
-                }
+                
             }
         }
         if (GetAsyncKeyState(VK_RIGHT)) {
@@ -78,6 +75,8 @@ void theMap::moveChar() {
             cout << "\n\n\nThank you for the game!\n\n\n";
             exit(3);
         }
+        cout << "\n\n\nPress Escape to exit the game.\n\n\n";
+        system("pause");
     }
 }
 void theMap::fullscreen()
@@ -89,6 +88,9 @@ void theMap::fullscreen()
 
 
 }
+
+
+
 
 
 
