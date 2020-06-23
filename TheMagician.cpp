@@ -5,8 +5,14 @@ using std::string; using std::cout;
 
 
 	TheMagician::TheMagician(){}
-	TheMagician::TheMagician(Character* ch,int mana) {
-		this->ch = ch;
+	TheMagician::TheMagician(string m_name, int m_hp, int m_strenght, int m_intelligence, int x, int y, int mana) {
+		this->m_name = m_name;
+		this->m_hp = m_hp;
+		this->m_strenght = m_strenght;
+		this->m_intelligence = m_intelligence;
+
+		this->x = x;
+		this->y = x;
 		this->mana=mana;
 	}
 	void TheMagician::SetMana(int mana) {
@@ -19,6 +25,7 @@ using std::string; using std::cout;
 		cout << "HP:" << this->m_hp;
 		cout << "Strenght: " <<this->m_strenght;
 		cout<< "Mana:" << this->mana;
+		cout << "LEVEL: " << Level;
 	}
 
 
