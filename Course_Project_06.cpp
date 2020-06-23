@@ -13,12 +13,13 @@ int main()
 	//theMap m{ 1, 1, ch };
 	
 	TheMagician* mag = new TheMagician("Magic", 100, 40, 40, 1, 1,60);
+	mag->DisplayCh();
 
-	mag->DisplayM();
 
 	theMap m{ 1,1,mag };
 	m.fullscreen();
 	m.moveChar();
+	
 	
 return 0;
 
