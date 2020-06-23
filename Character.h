@@ -36,7 +36,7 @@ public:
 	virtual void Attack(int m_hp, int m_strenght, int m_intelligence);
 	virtual void Defend(int m_hp, int m_strenght, int m_intelligence);
 	virtual void LevelUp(int m_hp, int m_strenght, int m_intelligence, int Level);
-
+	virtual void DisplayCh();
 
 };
 
