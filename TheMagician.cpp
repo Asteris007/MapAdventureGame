@@ -5,7 +5,7 @@ using std::string; using std::cout;
 
 
 	TheMagician::TheMagician(){}
-	TheMagician::TheMagician(Character ch,int mana) {
+	TheMagician::TheMagician(Character* ch,int mana) {
 		this->ch = ch;
 		this->mana=mana;
 	}
