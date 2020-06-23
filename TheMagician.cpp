@@ -1,5 +1,6 @@
 #include "TheMagician.h"
 #include "Character.h"
+#include<iostream>
 
 using std::string; using std::cout;
 
@@ -20,13 +21,14 @@ using std::string; using std::cout;
 	}
 	int TheMagician::GetMana() { return mana; }
 
-	void TheMagician::DisplayM() {
-		cout << "Name:" << this->m_name;
-		cout << "HP:" << this->m_hp;
-		cout << "Strenght: " <<this->m_strenght;
-		cout<< "Mana:" << this->mana;
+	/*void TheMagician::DisplayM() {
+		cout << "Name:" <<m_name;
+		cout << "HP:" << m_hp;
+		cout << "Strenght: " <<m_strenght;
+		//cout<< "Mana:" << mana;
 		cout << "LEVEL: " << Level;
-	}
+		system("pause");
+	}*/
 
 
 
