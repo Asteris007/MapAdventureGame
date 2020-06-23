@@ -92,6 +92,3 @@ void theMap::fullscreen()
 
 
 
-
-
-
