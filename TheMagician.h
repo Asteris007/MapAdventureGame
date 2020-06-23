@@ -7,11 +7,11 @@ class TheMagician :
 {
 private: 
 	int mana;
-	Character ch;
+	Character* ch;
 
 public:
 	TheMagician();
-	TheMagician(Character ch,int mana);
+	TheMagician(Character* ch,int mana);
 	void SetMana(int mana);
 int  GetMana();
 void DisplayM();
