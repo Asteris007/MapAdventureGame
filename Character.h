@@ -7,23 +7,35 @@ using std::string;
 
 class Character
 {
-private:
+public:
 	string m_name;
-	int m_level, m_hp, m_strenght, m_intelligence,m_money;
+	int  m_hp, m_strenght, m_intelligence;
 	int x =1;
 	int	y =1;
+	int Level = 1;
 
-public:
 
 	Character();
-	Character(string name, int level, int hp, int strenght, int intelligence, int money, int x1, int y1);
+	Character(string name, int m_hp, int m_strenght, int m_intelligence,  int x, int y);
 	void SetCharacter(int x, int y);
+	void SetName(string name);
+	
+	void SetHP(int hp);
+	void SetStren(int m_strenght);
+	void SetIntell(int m_intelligence);
+	
+	string GetName(); 
+
+	int GetHP();
+	int GetStren();
+	int GetIntell();
+
 	const int getX(void)const;
 	const int getY(void)const;
 
-	/*void attack();
-	void defend();
-	void levelUp();*/
+	virtual void Attack(int m_hp, int m_strenght, int m_intelligence);
+	virtual void Defend(int m_hp, int m_strenght, int m_intelligence);
+	virtual void LevelUp(int m_hp, int m_strenght, int m_intelligence, int Level);
 
 
 };
