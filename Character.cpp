@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <stdlib.h>
 
-using std::string;
+using std::string; using std::cout;
 
 Character::Character() {
 	}
@@ -77,4 +77,14 @@ void Character::LevelUp(int m_hp, int m_strenght, int m_intelligence,int Level) 
 	m_intelligence = ((10 * m_intelligence) / 100) + m_intelligence;
 	Level++;
 }
+void Character::DisplayCh() {
+	
+		cout << "Name:" << m_name;
+		cout << "HP:" << m_hp;
+		cout << "Strenght: " << m_strenght;
+	
+		cout << "LEVEL: " << Level;
+		system("pause");
+	}
+
 
